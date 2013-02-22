@@ -231,7 +231,7 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #333;
   text-decoration: none;
 }
 
@@ -4633,9 +4633,7 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .nav > li > a:hover {
-  background-image: url(../images/menuHover.gif);
-  background-position: center bottom;
-  background-repeat: no-repeat;
+
 }
 .navbar .nav > .phonetopheadercenter > a {
  padding-top:0

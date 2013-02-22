@@ -374,3 +374,8 @@ ol, ul {
 .fbicon{
 	margin-right: 10px;
 }
+.dropdownmenu a:hover{
+	background-image: url(../images/menuHover.gif);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
