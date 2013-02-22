@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/smart.css' />
+    <link rel='stylesheet' href='./css/smart_RWD.css' />
+    <link rel='stylesheet' href='./css/smart_tml.css' />
+  </head>
+  <body>
+	<style type="text/css"> 
+
+	.show-grid {
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+	}
+	/*.show-grid [class*="span"] {
+	  background-color: #eee;
+	  text-align: center;
+	  -webkit-border-radius: 3px;
+	     -moz-border-radius: 3px;
+	          border-radius: 3px;
+	  min-height: 40px;
+	  line-height: 40px;
+	}
+	.show-grid [class*="span"]:hover {
+	  background-color: #ddd;
+	}
+	.show-grid .show-grid {
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+	.show-grid .show-grid [class*="span"] {
+	  margin-top: 5px;
+	}
+	.show-grid [class*="span"] [class*="span"] {
+	  background-color: #ccc;
+	}
+	.show-grid [class*="span"] [class*="span"] [class*="span"] {
+	  background-color: #999;
+	}*/
+	</style>
+	<!--  尚未寫  -->
+	<header class="hidden-phone">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span7"></div>
+				<div class="span5 top_login">
+					<!--
+					<div id="navbar-example" class="navbar navbar-static">
+					<div class="navbar-inner">
+					<ul class="nav" role="navigation">
+						<li class="dropdown">
+							<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">同學會</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">課程</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">DVD</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">雜誌</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">叢書</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">討論區</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">限時搶購</a>
+						</li>
+					</ul>
+					</div>
+					</div>
+					-->
+					<!--<div id="navbar-example" class="navbar navbar-static">
+					<div class="navbar-inner">
+					<ul class="nav" role="navigation">
+						<a href="#">
+							<li id="cart">
+								(3)▼
+								<div class="menu">
+									 menu
+								</div>
+							</li>
+						</a>
+						<a href="#">
+							<li id="top_my_account" style="background:url(images/user_id.jpg) no-repeat ">
+								Allen Lin▼
+								<div class="menu">
+									 menu
+								</div>
+							</li>
+						</a>
+						<div id="unsigned_links" style="display:;">
+							<a href="#"><li>加入會員</li></a>
+							<a href="#"><li>會員登入</li></a>
+							<a href="#"><li>會員中心</li></a>
+							<a href="#"><li>訂單查詢</li></a>
+						</div>
+					</ul>
+					</div>
+					</div>-->
+					<ul class="breadcrumb">
+						<li><a href="#">加入會員</a></li>
+						<li><a href="#">會員登入</a> </li>
+						<li class="active">會員中心</li>
+						<li><a href="#">訂單查詢</a> </li>
+						<li id="top_my_account" style="background:url(images/user_id.jpg) no-repeat ">Allen Lin▼
+						</li>
+						<li id="cart">
+							(3)▼
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="row-fluid">
+				<div class="span12 logoBar">
+					<div class="row-fluid">
+						<div class="span7">
+							<img src="./images/logo.jpg" />
+						</div>
+						<div class="span5">
+							<div class="row-fluid">
+								<div class="span6">
+								<p>熱門：<a href="#">關鍵字</a>、<a href="#">關鍵字</a>、<a href="#">關鍵字</a>、<a href="#">關鍵字</a></p>
+								</div>
+								<div class="span6">
+									<input type="text" placeholder="Search…" class="search_input">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<div class="header_line"></div>
+	<!--  -->
+	<div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="./index.html">Bootstrap</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="">
+							<a href="./index.html">Home</a>
+						</li>
+						<li class="">
+							<a href="./getting-started.html">Get started</a>
+						</li>
+						<li class="">
+							<a href="./scaffolding.html">Scaffolding</a>
+						</li>
+						<li class="">
+							<a href="./base-css.html">Base CSS</a>
+						</li>
+						<li class="active">
+							<a href="./components.html">Components</a>
+						</li>
+						<li class="">
+							<a href="./javascript.html">JavaScript</a>
+						</li>
+						<li class="">
+							<a href="./customize.html">Customize</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Header's Buttom Nav(General)-->
+	<div id="navbar-example" class="navbar navbar-static hidden-phone">
+		<div class="navbar-inner">
+			<div class="container">
+				<ul class="nav general_nav" role="navigation">
+					<li class="dropdown" style="border:0px">
+						<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">同學會</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">課程</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">DVD</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">雜誌</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">叢書</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">討論區</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">限時搶購</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <!-- Header's Buttom Nav(General) End-->
+  	<div class="container">
+  		<div class="row-fluid">
+  			<div class="span12">
+  				<div class="row-fluid span12 cartstepframe">
+  					<div class="span1 cartstep cartstepwhite"> 
+  					</div>
+  					<div class="span2 cartstep"> 
+  						step1我的購物車
+  					</div>
+  					<div class="span2 cartstep"> 
+  						step2填寫資料
+  					</div>
+  					<div class="span2 cartstep"> 
+  						step3確認訂單＆付款
+  					</div>
+  					<div class="span2 cartstep"> 
+  						step4訂單確認
+  					</div>
+  					<div class="span2 cartstep"> 
+  						step5填寫參加者資料
+  					</div>
+  					<div class="span1 cartstep cartstepwhite"> 
+  					</div>
+  				</ul>
+	  		</div>
+  		</div>
+  		<div class="row-fluid">
+  			<div class="span12 cartcontentnav">
+		  		<ul>					
+					<a href="#"><li class="span2 active" >我的購物車</li></a>
+					<a href="#"><li class="span2">紅利查詢</li></a>
+					<a href="#"><li class="span2">稅換卷清單</li></a>
+					<a href="#"><li class="span2"></li></a>
+					<a href="#"><li class="span2"></li></a>
+					<a href="#"><li class="span2"></li></a>
+				</ul>
+			</div>
+		</div>
+  		<div class="row-fluid">
+	  		<div class="span12 blockframe">
+				<div class="row-fluid title_2">
+			  		<div class="span12">
+			  			<h3>盤後同學會【操盤手的萬無一失投資術(台中)】</h3>
+			  		</div>
+			  		<div class="span12">
+			  			<dl class="form_1">
+							<dt>姓名</dt>
+							<dd>
+								<input value="王大明">
+								<input type="radio" name="gender" value="male"> 先生
+								<input type="radio" name="gender" value="female"> 小姐
+							</dd>
+							<dt>行動電話</dt>
+							<dd>
+								<input value="0912-345678">
+								格式：0912-345678
+								
+							</dd>
+							<dt>Email</dt>
+							<dd>
+								<input value="ccool2486@gmail.com">
+							</dd>
+							<dt>聯絡地址</dt>
+							<dd>
+								<select name="county">
+									<option value="taipei">台北</option>
+									<option value="shinbei">台北</option>
+									<option value="taoyuan">桃園</option>
+									<option value="keelung">基隆</option>
+								</select>
+								
+								<select name="city">
+									<option value="taipei">台北市</option>
+									<option value="shinbei">台北</option>
+									<option value="taoyuan">桃園</option>
+									<option value="keelung">基隆</option>
+								</select>
+								<input class="short" value="114">
+								<input value="中正路123號4樓">
+							</dd>
+							<dt>職業</dt>
+							<dd>
+								<ul>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 資訊業
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 金融業
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 服務業
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 傳播業
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 製造業
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 貿易業
+										</label>
+									</li>
+								</ul>
+								<ul>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 自營商
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 家管
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 學生
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 軍公教
+										</label>
+									</li>
+									<li class="span2">
+										<label class="checkbox">
+											<input type="checkbox"> 其他
+										</label>
+									</li>
+							</dd>
+							<div class="clear"></div>
+						</dl>
+			  		</div>
+				</div>
+	  		</div>
+  		</div>
+  	</div>
+	<div class="row-fluid ">
+  			<div class="span12 visible-phone">
+  				建議使用桌上或平板頁面完成結帳流程
+  			</div>
+  		</div>
+  		<div class="row-fluid">
+	  		<ul>
+	  			<li class="span4">
+	  			</li>
+	  			<li class="span4">
+	  				<div class="btn">回購物車</div>
+	  				<div class="btn btn-warning">確認訂單
+	  				</div>
+	  			</li>
+	  			<li class="span4">
+	  			</li>
+	  		</ul>
+  		</div>
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':3001/livereload.js?snipver=1"></' + 'script>')</script>-->
+  </body>
+</html>
