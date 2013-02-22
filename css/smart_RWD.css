@@ -1278,17 +1278,27 @@ margin: 0;
   .row-fluid .phone-pic4{
     width: 33%;
     float: left;
+
   }
-  .row-fluid .phone-content4{
+  .row-fluid .phone-content{
     width: 64%;
     margin-left:2%; 
     float: left;
   }
-  .row-fluid .phone-content{
+  .row-fluid .phone-content150{
     margin-left:2%; 
     width: 65%;
     float: left;
+	min-height:150px;
   }
+  
+  .row-fluid .phone-content140{
+    margin-left:2%; 
+    width: 65%;
+    float: left;
+	min-height:140px;
+  }
+  
   .phoneblock .span3{
 
 
