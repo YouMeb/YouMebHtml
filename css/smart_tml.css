@@ -1,6 +1,6 @@
 ol, ul {
 	list-style: none;
-	margin: 5px 0;
+	margin: 0;
 }
 
 /*   img size  */
@@ -24,7 +24,8 @@ ol, ul {
 .blockframe{
 	border: solid 1px #cccccc;
 	/*border: 1px solid #aaa;*/
-	padding: 0px 10px 10px 10px;
+	padding: 0px 5px 5px 5px;
+	margin: 0 0 10px 0;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -52,10 +53,10 @@ ol, ul {
 	border-right:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 	margin-top: -20px;
-	padding-top: 20px;
+	padding-top: 10px;
 	height: auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -361,10 +362,6 @@ ol, ul {
 	margin-top: 0px;
 }
 
-.row-fluid [class*="toptcontent"] {
-		
-}
-
 .fb_space_div{
 	height:60px;width:100%
 }
@@ -388,10 +385,19 @@ ol, ul {
 
 .nav-tabs{
 	margin-top: 0px;
+	border-bottom: none;
 }
 
 .nav-tabs .tab1, .tab2{
 	width:50%;
+}
+
+.nav-tabs > li {
+margin-bottom: -4px;
+}
+
+.nav{
+	margin-bottom: 10px;
 }
 
 .maincon{
@@ -399,20 +405,51 @@ ol, ul {
 }
 
 .contentitem{
-	margin: 5px 0;
+	
+}
+
+.media, .media .media {
+	margin-top: 3px;
 }
 
 .czone1{
-	margin: 0 0 0 10px;
+	
+}
+.zonetitem1  {
+	margin: 0 0 10px 5px;
+}
+.media-heading {
+	margin: 0 0 3px 0;
+}
+
+.scontentlist {
+	min-height:195px;
+}
+
+.scontentad {
+	background-color:#EEE;
+	padding: 0 3px;
 }
 
 @media (min-width: 1200px){
 	.row-fluid .span9 .span12 {
-		margin:0 0 10px 0;
+		margin:0;
 	}
 	
 	.row-fluid [class*="hotACT"] {
 		margin-left:0;
+	}
+	
+	.row-fluid [class*="blockframe"]:first-child {
+		margin: 0 0 10px 0;
+	}
+	
+	.row-fluid [class*="tabbable"] {
+		margin: 0;
+	}
+	
+	.row-fluid [class*="span"] {
+		margin-left: 1%;
 	}
 }
 
