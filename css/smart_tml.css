@@ -365,12 +365,7 @@ ol, ul {
 .fb_space_div{
 	height:60px;width:100%
 }
-.showadframe{
-	width:100%;z-index:99;position:relative;margin-top:-20px;border-radius:0;display:none;
-}
-.showadframecontent{
-	background:#fff;margin:top:-20px;
-}
+
 .arrow_pic{
 	float:right;
 }
@@ -431,6 +426,23 @@ margin-bottom: -4px;
 	padding: 0 3px;
 }
 
+.dropdownmenu .active{
+	background: #000;
+}
+.showadframe{
+	width:100%;
+	z-index:99;
+	position:relative;
+	margin-top:-20px;border-radius:0;
+	position: absolute;
+	visibility: visible;
+}
+.showadframecontent{
+	background:#fff;margin:top:-20px;
+}
+
+.drop-shadow(0,1px, 2px,0.4)
+/* tool bar End */
 @media (min-width: 1200px){
 	.row-fluid .span9 .span12 {
 		margin:0;
@@ -453,6 +465,9 @@ margin-bottom: -4px;
 	}
 }
 
+div.mega.open {
+	visibility: visible;
+}
 @media (max-width: 979px) and (min-width: 768px){
 	.row-fluid .in-portrait-span12 {
 		width: 100%;
