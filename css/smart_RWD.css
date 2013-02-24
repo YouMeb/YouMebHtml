@@ -230,6 +230,9 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .row-fluid .magamenu {
+  display: none;
+}
     .row-fluid [class*="span_margin0"] {
 
     margin-left: 0;
