@@ -1,28 +1,58 @@
-var checktime = 0;
+//var checktime = 0;
 $(function() {
 
 	var $mini_top_tab_subs = $('.dropdownmenu').find('a'),
 		$showadframe = $('.showadframe'),
 		$megas = $('.showadframe'),
-		$lis = $('.checktime');
+		$lis = $('.dropdownmenu');
+		
 
 	$mini_top_tab_subs.on('tap',function(event) {
 		event.preventDefault();
 		$mini_top_tab_subs.each(function() {
-			$(this).removeClass('active');
+			//$(this).removeClass('active');
 			document.getElementById('showaddiv1').style.display='none';
+			$('.megamenu').css('display','none');
+			//$showadframe.removeClass('active');
 			$showadframe.removeClass('active');
 		});
 		$(this).addClass('checktime');
 		document.getElementById('showaddiv1').style.display='block';
 		$showadframe.addClass('animated').addClass('fadeIn');
-		//checktime = 1;
+
+		var section = $(this).data('section');
+			switch(section) {
+				case 'aa':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					checktime('/test/tpl/dd.php');// 請輸入同學會Url
+					break;
+				case 'class':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					checktime('/test/tpl/dd.php'); //請輸入課程Url
+					break;
+				case 'dvd':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					checktime('/test/tpl/dd.php'); //請輸入DVD Url
+					break;
+				case 'magazine':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					checktime('/test/tpl/dd.php'); //請輸入雜誌Url
+					break;
+				case 'book':
+					location.href = '/test/tpl/dd.php';
+					break;
+				case 'forum':
+					location.href = '/test/tpl/dd.php';
+					break;
+				case 'purchase':
+					location.href = '/test/tpl/dd.php';
+					break;
+			}
+
+
+
 	});
-	$lis.on('tap', function(event) {
-		console.log('yoyo');
-		event.preventDefault();
-		location.href = '/test/tpl/dd.php';
-	});
+
 
 	// $lis.on('checktime', function(event) {
 	// 	event.preventDefault();
@@ -89,8 +119,18 @@ $(function() {
 	// 	$(this).hide();
 	// 	$lis.removeClass('active');
 	// });
+	
+
 }); 
 
+function checktime(url){
+	$list = $('.checktime');
+	$list.on('tap', function(event) {
+		console.log('yoyo');
+		event.preventDefault();
+		location.href = url; // 請寫同學會網址
+	});
+}
 // (function ($) {
 
 

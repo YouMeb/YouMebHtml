@@ -139,7 +139,7 @@ ol, ul {
 	line-height: 1.7;
 	height: 35px;
 	margin-bottom: 0px;
-	margin-left: 5px;
+	margin-left: 0px;
 }
 /* span3 title*/
 
@@ -448,13 +448,24 @@ margin-bottom: -4px;
 .showadframecontent{
 	background:#fff;margin:top:-20px;
 }
+
+
+.magamenu {
+	display: none;
+}
+
 /*  End   */
 /*div.actived{
 	display: block;
 }*/
 @media (min-width: 1200px){
-	.row-fluid .span9 .span12 {
-		margin:0;
+
+	.row-fluid .span9 .blockframe:first-child{
+		margin: 0;
+	}
+	
+	.row-fluid .span9 .blockframe{
+		margin-top:10px	;
 	}
 	
 	.row-fluid .span9 .bczone1, .row-fluid .span9 .bczone2, .row-fluid .span9 .bczone3, .row-fluid .span9 .bczone4 {
@@ -486,7 +497,7 @@ margin-bottom: -4px;
 	}
 	
 	.row-fluid [class*="span"]:first-child  .bczonetitem1, .row-fluid [class*="span"]:first-child  .bczonetitem2, .row-fluid [class*="span"]:first-child  .bczonetitem3, .row-fluid [class*="span"]:first-child  .bczonetitem4{
-		margin: 0px 0px 5px 5px;
+		margin: 0px 0px 5px 0px;
 	}
 }
 
