@@ -10,7 +10,7 @@
 			event.preventDefault();
 
 			$mini_top_tab_subs.each(function() {
-				$(this).removeClass('active');
+				$(this).removeClass('active fadeIn ');
 			});
 			$(this).addClass('active');
 
