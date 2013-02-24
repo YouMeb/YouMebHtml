@@ -448,7 +448,9 @@ margin-bottom: -4px;
 .showadframecontent{
 	background:#fff;margin:top:-20px;
 }
-
+.magamenu {
+	display: none;
+}
 /*  End   */
 /*div.actived{
 	display: block;

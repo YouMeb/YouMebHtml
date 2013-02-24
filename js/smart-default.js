@@ -1,28 +1,63 @@
-var checktime = 0;
+//var checktime = 0;
 $(function() {
 
 	var $mini_top_tab_subs = $('.dropdownmenu').find('a'),
 		$showadframe = $('.showadframe'),
 		$megas = $('.showadframe'),
-		$lis = $('.checktime');
+		$lis = $('.dropdownmenu');
+		
 
 	$mini_top_tab_subs.on('tap',function(event) {
 		event.preventDefault();
 		$mini_top_tab_subs.each(function() {
-			$(this).removeClass('active');
+			//$(this).removeClass('active');
 			document.getElementById('showaddiv1').style.display='none';
+			$('.megamenu').css('display','none');
+			//$showadframe.removeClass('active');
 			$showadframe.removeClass('active');
 		});
 		$(this).addClass('checktime');
 		document.getElementById('showaddiv1').style.display='block';
 		$showadframe.addClass('animated').addClass('fadeIn');
-		//checktime = 1;
+
+		$list = $('.checktime');
+		$list.on('tap', function(event) {
+			console.log('yoyo');
+			event.preventDefault();
+			location.href = '/test/tpl/dd.php'; // 請寫同學會網址
+		});
+
+
+		var section = $(this).data('section');
+			switch(section) {
+				case 'aa':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					
+					break;
+				case 'class':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					break;
+				case 'dvd':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					break;
+				case 'magazine':
+					$('.megamenu_' + section).show().addClass('fadeIn');
+					break;
+				case 'book':
+					location.href = '/test/tpl/dd.php';
+					break;
+				case 'forum':
+					location.href = '/test/tpl/dd.php';
+					break;
+				case 'purchase':
+					location.href = '/test/tpl/dd.php';
+					break;
+			}
+
+
+
 	});
-	$lis.on('tap', function(event) {
-		console.log('yoyo');
-		event.preventDefault();
-		location.href = '/test/tpl/dd.php';
-	});
+
 
 	// $lis.on('checktime', function(event) {
 	// 	event.preventDefault();
@@ -64,31 +99,31 @@ $(function() {
 	// 	// }
 
 	// });
-	// $lis.on('mouseleave', '', {}, function() {
+	$lis.on('mouseleave', '', {}, function() {
 
-	// 	$(window).on('mousemove', '', {}, function(event) {
+		$(window).on('mousemove', '', {}, function(event) {
 
-	// 		var array = ["megamenu_aa", "megamenu_class", "megamenu_dvd", "megamenu_magazine"];
-	// 		var idx = array.indexOf(event.target.id);
+			var array = ["megamenu_aa", "megamenu_class", "megamenu_dvd", "megamenu_magazine"];
+			var idx = array.indexOf(event.target.id);
 
-	// 		if (idx == -1) {
+			if (idx == -1) {
 
-	// 			setTimeout(function() {
+				setTimeout(function() {
 
-	// 				$megas.hide();
-	// 				$lis.removeClass('active');
-	// 				$(window).off('mousemove');
-	// 			}, 200);
-	// 		} else {
-	// 			$(window).off('mousemove');
-	// 		}
-	// 	});
+					$megas.hide();
+					$lis.removeClass('active');
+					$(window).off('mousemove');
+				}, 200);
+			} else {
+				$(window).off('mousemove');
+			}
+		});
 
-	// });
-	// $megas.on('mouseleave', '', {}, function() {
-	// 	$(this).hide();
-	// 	$lis.removeClass('active');
-	// });
+	});
+	$megas.on('mouseleave', '', {}, function() {
+		$(this).hide();
+		$lis.removeClass('active');
+	});
 }); 
 
 // (function ($) {
