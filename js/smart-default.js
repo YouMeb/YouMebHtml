@@ -1,94 +1,94 @@
-// $('#drop4').toolbar({
-// 	content: '#user-toolbar-options4', 
-// 	position: 'bottom'
-// });
-
-
+var checktime = 0;
 $(function() {
 
-	var $mini_top_tab_subs = $('.dropdownmenu').find('a');
+	var $mini_top_tab_subs = $('.dropdownmenu').find('a'),
+		$showadframe = $('.showadframe'),
+		$megas = $('.showadframe'),
+		$lis = $('.checktime');
 
-	$mini_top_tab_subs.on('click', '', {}, function(event) {
+	$mini_top_tab_subs.on('tap',function(event) {
 		event.preventDefault();
-
 		$mini_top_tab_subs.each(function() {
 			$(this).removeClass('active');
+			document.getElementById('showaddiv1').style.display='none';
+			$showadframe.removeClass('active');
 		});
-		$(this).addClass('active');
-
+		$(this).addClass('checktime');
+		document.getElementById('showaddiv1').style.display='block';
+		$showadframe.addClass('animated').addClass('fadeIn');
+		//checktime = 1;
 	});
-	/**
-	 *
-	 */
-	var $lis = $('#top_tab').find('li');
-	var $megas = $('.showadframe');
-
-	$lis.on('click', '', {}, function(event) {
-
+	$lis.on('tap', function(event) {
+		console.log('yoyo');
 		event.preventDefault();
-
-		if ($(this).hasClass('active')) {
-			location.href = '/test/tpl/dd.php';
-		}
-
-		$lis.each(function() {
-			$(this).removeClass('active');
-		});
-		$(this).addClass('active');
-
-		$megas.hide();
-
-		var section = $(this).data('section');
-		switch(section) {
-			case 'aa':
-				$('#megamenu_' + section).show().addClass('fadeIn');
-				break;
-			case 'class':
-				$('#megamenu_' + section).show().addClass('fadeIn');
-				break;
-			case 'dvd':
-				$('#megamenu_' + section).show().addClass('fadeIn');
-				break;
-			case 'magazine':
-				$('#megamenu_' + section).show().addClass('fadeIn');
-				break;
-			case 'book':
-				location.href = '/test/tpl/dd.php';
-				break;
-			case 'forum':
-				location.href = '/test/tpl/dd.php';
-				break;
-			case 'purchase':
-				location.href = '/test/tpl/dd.php';
-				break;
-		}
-
+		location.href = '/test/tpl/dd.php';
 	});
-	$lis.on('mouseleave', '', {}, function() {
 
-		$(window).on('mousemove', '', {}, function(event) {
+	// $lis.on('checktime', function(event) {
+	// 	event.preventDefault();
+	// 	if ($(this).hasClass('')) {
+	// 		location.href = '/test/tpl/dd.php';
+	// 	}
+	// 	console.log('oh!ya')
+	// 	// $lis.each(function() {
+	// 	// 	//$(this).removeClass('active');
+	// 	// 	//document.getElementById('showaddiv1').style.display='none';
+	// 	// });
+	// 	// //$(this).addClass('active');
+	// 	// //document.getElementById('showaddiv1').style.display='block';
+	// 	// //$megas.hide();
 
-			var array = ["megamenu_aa", "megamenu_class", "megamenu_dvd", "megamenu_magazine"];
-			var idx = array.indexOf(event.target.id);
+	// 	// var section = $(this).data('section');
+	// 	// switch(section) {
+	// 	// 	case 'aa':
+	// 	// 		$('.megamenu_' + section).show().addClass('fadeIn');
+	// 	// 		break;
+	// 	// 	case 'class':
+	// 	// 		$('.megamenu_' + section).show().addClass('fadeIn');
+	// 	// 		break;
+	// 	// 	case 'dvd':
+	// 	// 		$('.megamenu_' + section).show().addClass('fadeIn');
+	// 	// 		break;
+	// 	// 	case 'magazine':
+	// 	// 		$('.megamenu_' + section).show().addClass('fadeIn');
+	// 	// 		break;
+	// 	// 	case 'book':
+	// 	// 		location.href = '/test/tpl/dd.php';
+	// 	// 		break;
+	// 	// 	case 'forum':
+	// 	// 		location.href = '/test/tpl/dd.php';
+	// 	// 		break;
+	// 	// 	case 'purchase':
+	// 	// 		location.href = '/test/tpl/dd.php';
+	// 	// 		break;
+	// 	// }
 
-			if (idx == -1) {
+	// });
+	// $lis.on('mouseleave', '', {}, function() {
 
-				setTimeout(function() {
+	// 	$(window).on('mousemove', '', {}, function(event) {
 
-					$megas.hide();
-					$lis.removeClass('active');
-					$(window).off('mousemove');
-				}, 200);
-			} else {
-				$(window).off('mousemove');
-			}
-		});
+	// 		var array = ["megamenu_aa", "megamenu_class", "megamenu_dvd", "megamenu_magazine"];
+	// 		var idx = array.indexOf(event.target.id);
 
-	});
-	$megas.on('mouseleave', '', {}, function() {
-		$(this).hide();
-		$lis.removeClass('active');
-	});
+	// 		if (idx == -1) {
+
+	// 			setTimeout(function() {
+
+	// 				$megas.hide();
+	// 				$lis.removeClass('active');
+	// 				$(window).off('mousemove');
+	// 			}, 200);
+	// 		} else {
+	// 			$(window).off('mousemove');
+	// 		}
+	// 	});
+
+	// });
+	// $megas.on('mouseleave', '', {}, function() {
+	// 	$(this).hide();
+	// 	$lis.removeClass('active');
+	// });
 }); 
 
 // (function ($) {
