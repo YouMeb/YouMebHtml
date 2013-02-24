@@ -22,35 +22,31 @@ $(function() {
 		document.getElementById('showaddiv1').style.display='block';
 		$showadframe.removeClass('fadeOut').addClass('animated').addClass('fadeIn');
 		var section = $(this).data('section');
+		$('.megamenu').hide();
 		switch(section) {
-			case 'aa':
-				$('.megamenu').hide();
-
+			case 'aa':	
 				$('.megamenu_' + section).show().addClass('fadeIn');
 				if ($('.megamenu_' + section).hasClass('checktime')){
-					checktime('/test/tpl/dd1.php');// 請輸入同學會Url
+					console.log('yoyo');
+					location.href = '/test/tpl/dd1.php';// 請輸入同學會Url
 				}
 				break;
 			case 'class':
-				$('.megamenu').hide();
-
 				$('.megamenu_' + section).show().addClass('fadeIn');
 				if ($('.megamenu_' + section).hasClass('checktime')){
-					checktime('/test/tpl/dd2.php'); //請輸入課程Url
+					location.href = '/test/tpl/dd2.php'; //請輸入課程Url
 				}
 				break;
 			case 'DVD':
-				//$('.megamenu').hide();
 				$('.megamenu_' + section).show().addClass('fadeIn');
 				if ($('.megamenu_' + section).hasClass('checktime')){
-					checktime('/test/tpl/dd3.php'); //請輸入DVD Url
+					location.href = '/test/tpl/dd3.php'; //請輸入DVD Url
 				}
 				break;
 			case 'magazine':
-				//$('.megamenu').hide();
 				$('.megamenu_' + section).show().addClass('fadeIn');
 				if ($('.megamenu_' + section).hasClass('checktime')){
-					checktime('/test/tpl/dd4.php'); //請輸入雜誌Url
+					location.href = '/test/tpl/dd4.php'; //請輸入雜誌Url
 				}
 				break;
 			case 'book':
@@ -66,12 +62,3 @@ $(function() {
 	});
 	//首頁選單結束
 }); 
-
-function checktime(url){
-	$list = $('.checktime');
-	$list.on('tap', function(event) {
-		console.log('yoyo');
-		event.preventDefault();
-		location.href = url; // 請寫同學會網址
-	});
-}
